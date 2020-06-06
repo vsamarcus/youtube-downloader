@@ -7,7 +7,7 @@ In this project, a system was developed to convert and download music or YouTube
 Clone this project: 
 
 ```bash
-https://github.com/vsamarcus/youtube-downloader.git
+git clone https://github.com/vsamarcus/youtube-downloader.git
 ```
 
 ```javascript
