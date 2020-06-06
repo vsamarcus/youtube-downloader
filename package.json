@@ -6,5 +6,8 @@
   "dependencies": {
     "inquirer": "^7.1.0",
     "ytdl-core": "^3.1.0"
+  },
+  "scripts": {
+    "test": "node app.js"
   }
 }
