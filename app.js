@@ -1,3 +1,4 @@
+const sanitize = require('sanitize-filename');
 const inquirer = require('inquirer');
 const fs = require('fs');
 const yt = require('ytdl-core');
@@ -27,7 +28,7 @@ const questions = [
 inquirer.prompt(questions).then(async (response) => {
   const URL = response.video_link;
   await yt.getInfo(URL, async (err, info) => {
-    let title = info.videoDetails.title;
+    let title = sanitize(info.videoDetails.title);
     console.log(title);
     const file = await yt(URL, { format: 'mp3', filter: 'audioonly' })
       .on('progress', onProgress)
