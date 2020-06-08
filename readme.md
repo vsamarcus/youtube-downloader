@@ -7,11 +7,11 @@ In this project, a system was developed to convert and download music or YouTube
 Clone this project: 
 
 ```bash
-git clone https://github.com/vsamarcus/youtube-downloader.git
+git clone https://github.com/vsamarcus/youtube-to-mp3-cli-downloader.git
 ```
 
 ```javascript
-cd youtube-downloader
+cd youtube-to-mp3-cli-downloader
 
 run npm install or yarn
 
