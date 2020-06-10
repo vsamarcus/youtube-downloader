@@ -32,6 +32,6 @@ inquirer.prompt(questions).then(async (response) => {
     console.log(title);
     const file = await yt(URL, { format: 'mp3', filter: 'audioonly' })
       .on('progress', onProgress)
-      .pipe(fs.createWriteStream(`${__dirname}/${title}.mp3`));
+      .pipe(fs.createWriteStream(`${__dirname}/downloads/${title}.mp3`));
   });
 });
